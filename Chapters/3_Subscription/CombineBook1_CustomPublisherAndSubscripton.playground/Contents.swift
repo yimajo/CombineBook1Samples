@@ -71,28 +71,3 @@ let subscriber = AnySubscriber<Int, Never>(receiveSubscription: {
 })
 
 publisher.subscribe(subscriber)
-
-
-//final class IntSubscriber: Subscriber {
-//    typealias Input = Int
-//    typealias Failure = Never
-//
-//    // 1.
-//    private var subscription: Subscription?
-//
-//    // 2. Subscriberプロトコルのメソッドを実装する。シーケンス図のとおり
-//    func receive(subscription: Subscription) {
-//        self.subscription = subscription
-//        subscription.request(.unlimited)
-//    }
-//
-//    // 3. Subscriberプロトコルのメソッドを実装する。シーケンス図のとおり
-//    func receive(_ input: Input) -> Subscribers.Demand {
-//        return .none
-//    }
-//
-//    // 4. Subscriberプロトコルのメソッドを実装する。シーケンス図のとおり
-//    func receive(completion: Subscribers.Completion<Never>) {
-//        subscription = nil
-//    }
-//}
