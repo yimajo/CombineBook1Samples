@@ -2,16 +2,6 @@
 
 import Combine
 
-//var userBalance = 5
-//let productPrice = 10
-
-//let canMakePurchase = userBalance >= productPrice // 5 >= 10
-//print(canMakePurchase) // false
-//
-//userBalance += 20
-//print(canMakePurchase) // falseのまま
-//
-
 let userBalance = CurrentValueSubject<Int, Never>(5)
 let productPrice = Just(10)
 
