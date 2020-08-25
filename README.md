@@ -1,5 +1,5 @@
 # CombineBook1Samples
-電子書籍[Combineガイドブック](https://swift.booth.pm/items/2237047)のサンプルコードです。
+電子書籍[Combine framework ガイドブック](https://swift.booth.pm/items/2237047)のサンプルコードです。
 
 ## 環境
 
